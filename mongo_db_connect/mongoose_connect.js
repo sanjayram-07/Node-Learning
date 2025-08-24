@@ -28,7 +28,7 @@ app.post('/user',async(req,res)=>
 
     }
     catch(err){
-        res.status(404).send("data is invalid || not inserted",err.message);
+        res.status(404).json("data is invalid || not inserted",err.message);
     }
 })
 
